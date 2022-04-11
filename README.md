@@ -1,1 +1,1 @@
-# A Placement experience sharing app
+# A Placement experience sharing web app
