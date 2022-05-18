@@ -181,6 +181,11 @@ img {
   outline: none;
 }
 
+.showcase-text a:hover {
+  background-color: rgba(255, 255, 255, 0.9);
+  color: var(--primary-color);
+}
+
 .showcase-signup::before,
 .showcase-signup::after {
   position: absolute;
@@ -313,6 +318,71 @@ img {
   color: #fff;
   height: 300px;
   margin: 0 auto;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 50px;
+}
+
+.footer-container .left p {
+  font-size: larger;
+}
+
+.footer-container .left span {
+  color: red;
+}
+
+.footer-container .middle .btn-footer {
+  display: inline-block;
+  padding: 10px 30px;
+  cursor: pointer;
+  background-color: #0a1535;
+  border-radius: 5px;
+  border: none;
+  color: #fff;
+}
+
+.footer-container .middle h3 {
+  font-weight: 300;
+}
+
+.form-footer {
+  position: relative;
+  height: 100%;
+  width: 400px;
+  padding: 20px;
+  z-index: 100;
+}
+
+.form-footer input {
+  border: none;
+  background: #fff;
+  font-size: 15px;
+  margin-left: 5px;
+  cursor: pointer;
+  padding: 5px;
+  height: 40px;
+  width: fit-content;
+  border-radius: 5px;
+}
+
+.form-footer input:focus {
+  outline: none;
+}
+
+.footer-container .right .icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.footer-container .right img {
+  width: 40px;
+  height: 40px;
 }
 
 /* Utilities */

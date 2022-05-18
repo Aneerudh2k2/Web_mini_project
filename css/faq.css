@@ -5,13 +5,6 @@
   --primary-color: #7ac0f8;
 }
 
-.background {
-  position: absolute;
-  display: block;
-  top: 0;
-  left: 0;
-  z-index: 0;
-}
 * {
   box-sizing: border-box;
   margin: 0;
@@ -22,7 +15,7 @@ body {
   font-family: "Mulish", "Lato", sans-serif;
   color: #333;
   line-height: 1.6;
-  background-color: var(--primary-color);
+  /* background-color: var(--primary-color); */
 }
 
 ul {
@@ -48,98 +41,45 @@ p {
 img {
   width: 100%;
 }
+/* till up basic styles */
 
-/* logo */
-.logo-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 300px;
-  height: 200px;
-  color: beige;
+/* Navbar */
+.navbar {
+  background-color: var(--primary-color);
+  color: #fff;
+  height: 70px;
 }
 
-/* card properties */
-.card-container {
+.navbar ul {
   display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.flex-card {
-  display: flex;
-  flex-direction: row;
   justify-content: space-between;
-  width: 1100px;
-  height: 400px;
 }
 
-.left {
-  margin: 10px;
-  padding: 10px;
-  width: 100%;
+.navbar .flex {
+  justify-content: space-between;
 }
 
-.left h1 {
-  color: #96005c;
-}
-
-.left p {
-  font-size: 18px;
-  color: #04286e;
-}
-
-.right {
-  border-top-right-radius: 10px;
-  border-bottom-right-radius: 10px;
-  background: rgb(63, 94, 251);
-  background: linear-gradient(
-    90deg,
-    rgba(63, 94, 251, 1) 0%,
-    rgba(252, 70, 107, 1) 100%
-  );
-
-  padding: 40px;
-  width: 100%;
-  color: white;
+.navbar .flex .college_logo {
   display: flex;
-  flex-direction: column;
-  /* justify-content: center; */
   align-items: center;
-  /* margin: 10px; */
 }
 
-.form-group .form-control {
-  margin: 30px 0;
+.navbar .logo {
+  margin: 0;
+  padding: 0;
 }
 
-.form-group .form-control input {
-  border: none;
-  border-radius: 5px;
-  height: 35px;
+.navbar a {
   padding: 10px;
-  width: 350px;
-  font-size: 16px;
+  color: #fff;
+  margin: 0 5px;
 }
 
-.form-group .form-control input:focus {
-  outline: none;
-}
-
-.signup-redirect {
-  display: flex;
-  flex-direction: row;
+.navbar a:hover {
+  border-bottom: 2px #fff solid;
 }
 
 /* Utilities */
-
-.extra-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
 .container {
   max-width: 1200px;
   margin: 0 auto; /* top-bottom = 0 left-right = auto*/
@@ -152,6 +92,8 @@ img {
   color: #333;
   border-radius: 10px;
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  margin: 20px;
   /* transform-style: preserve-3d; */
 }
 
@@ -159,7 +101,7 @@ img {
   display: inline-block;
   padding: 10px 30px;
   cursor: pointer;
-  background-color: #96005c;
+  background-color: var(--primary-color);
   border-radius: 5px;
   border: none;
   color: #fff;
@@ -192,7 +134,7 @@ img {
   /* generally grid works on rows and columns */
   display: grid;
   /* grid-template-columns: 300px 200px;instead of pixels 
-  using fractions is helpful for different screen sizes*/
+      using fractions is helpful for different screen sizes*/
   /* grid-template-columns: 1fr 1fr; */
   grid-template-columns: repeat(2, 1fr);
   gap: 20px;
