@@ -22,7 +22,7 @@ body {
   font-family: "Mulish", "Lato", sans-serif;
   color: #333;
   line-height: 1.6;
-  background-color: var(--primary-color);
+  background-color: rgb(236, 238, 247);
 }
 
 ul {
@@ -98,7 +98,12 @@ img {
     rgba(63, 94, 251, 1) 0%,
     rgba(252, 70, 107, 1) 100%
   );
-
+  /* background: rgb(231, 234, 252);
+  background: linear-gradient(
+    90deg,
+    rgb(222, 227, 248) 50%,
+    var(--primary-color) 80%
+  ); */
   padding: 40px;
   width: 100%;
   color: white;
