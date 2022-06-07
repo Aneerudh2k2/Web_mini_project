@@ -16,6 +16,7 @@ body {
   color: #333;
   line-height: 1.6;
   /* background-color: var(--primary-color); */
+  background-color: #c7c7ec;
 }
 
 ul {
@@ -45,7 +46,8 @@ img {
 
 /* Navbar */
 .navbar {
-  background-color: var(--primary-color);
+  /* background-color: var(--primary-color);*/
+  background-color: #5553b7;
   color: #fff;
   height: 70px;
 }
@@ -77,6 +79,21 @@ img {
 
 .navbar a:hover {
   border-bottom: 2px #fff solid;
+}
+
+/* Chatbot styles */
+.chatbot-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90%;
+}
+
+.description-flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Utilities */
