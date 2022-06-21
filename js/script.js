@@ -60,8 +60,10 @@ const validatePassword = (password, cnf_password) => {
 };
 
 function moveToHomePage() {
-  window.location.href = "./index.html";
+  window.location.href = "../static/home.html";
 }
+
+/* Listening to the submit event of the form. */
 form.addEventListener("submit", async function (event) {
   event.preventDefault();
   const formData = {
